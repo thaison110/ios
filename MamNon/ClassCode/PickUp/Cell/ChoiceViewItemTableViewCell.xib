@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="75" id="KGk-i7-Jjw" customClass="ChoiceViewItemTableViewCell" customModule="MamNon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZa-VS-Qip">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="34"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_TickBlue" translatesAutoresizingMaskIntoConstraints="NO" id="s5Z-Il-HY7">
+                                <rect key="frame" x="12" y="13.5" width="17" height="7"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="7" id="AfJ-WC-eK8"/>
+                                    <constraint firstAttribute="width" constant="17" id="VPK-NC-oPw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mới nhất" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQr-ch-Rln">
+                                <rect key="frame" x="32" y="8" width="278" height="18"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.36078431372549019" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="Btb-9G-v50"/>
+                            <constraint firstItem="s5Z-Il-HY7" firstAttribute="leading" secondItem="QZa-VS-Qip" secondAttribute="leading" constant="12" id="FKS-pX-dXq"/>
+                            <constraint firstItem="s5Z-Il-HY7" firstAttribute="centerY" secondItem="QZa-VS-Qip" secondAttribute="centerY" id="HKP-Gp-1fk"/>
+                            <constraint firstItem="iQr-ch-Rln" firstAttribute="leading" secondItem="QZa-VS-Qip" secondAttribute="leading" constant="32" id="QfQ-1x-sff"/>
+                            <constraint firstItem="iQr-ch-Rln" firstAttribute="centerY" secondItem="QZa-VS-Qip" secondAttribute="centerY" id="Qtc-UG-9Cq"/>
+                            <constraint firstAttribute="trailing" secondItem="iQr-ch-Rln" secondAttribute="trailing" constant="10" id="jcN-g2-5kl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="QZa-VS-Qip" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ci2-Fh-soI"/>
+                    <constraint firstAttribute="bottom" secondItem="QZa-VS-Qip" secondAttribute="bottom" id="P0e-33-z7K"/>
+                    <constraint firstItem="QZa-VS-Qip" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fgB-ZD-Jdb"/>
+                    <constraint firstAttribute="trailing" secondItem="QZa-VS-Qip" secondAttribute="trailing" id="yDJ-60-QhE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imageTick" destination="s5Z-Il-HY7" id="mki-6m-GAl"/>
+                <outlet property="labelTitle" destination="iQr-ch-Rln" id="EcN-95-gXL"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="100.11160714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_TickBlue" width="15" height="10"/>
+    </resources>
+</document>

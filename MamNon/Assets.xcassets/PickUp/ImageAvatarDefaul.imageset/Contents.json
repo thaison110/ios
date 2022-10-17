@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "Ảnh chụp Màn hình 2022-09-20 lúc 22.39.34-1.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Ảnh chụp Màn hình 2022-09-20 lúc 22.39.34.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

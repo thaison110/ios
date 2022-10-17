@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationViewController" customModule="MamNon" customModuleProvider="target">
+            <connections>
+                <outlet property="tabelView" destination="yuu-k1-IzN" id="lj4-EU-n9b"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewHeader" destination="Rhq-K7-Xbf" id="CjR-Ik-hVD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rz4-oI-3PX" userLabel="ViewHeaderBackground">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                    <color key="backgroundColor" red="1" green="0.47450980390000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rhq-K7-Xbf" userLabel="ViewHeader">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="6rJ-dm-tyx"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thông báo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9x-z9-MUn">
+                    <rect key="frame" x="16" y="110" width="95" height="24"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFD-36-gi0">
+                    <rect key="frame" x="320.5" y="106" width="77.5" height="32.5"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Cài đặt">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="Helvetica-Bold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </buttonConfiguration>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yuu-k1-IzN">
+                    <rect key="frame" x="0.0" y="144.5" width="414" height="751.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Rhq-K7-Xbf" firstAttribute="bottom" secondItem="Rz4-oI-3PX" secondAttribute="bottom" id="3Rz-sf-JlC"/>
+                <constraint firstItem="Rhq-K7-Xbf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4Ef-mn-KSq"/>
+                <constraint firstItem="KFD-36-gi0" firstAttribute="centerY" secondItem="B9x-z9-MUn" secondAttribute="centerY" id="Bnv-rq-Tnm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rhq-K7-Xbf" secondAttribute="trailing" id="IXC-bz-AMf"/>
+                <constraint firstItem="Rz4-oI-3PX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JlY-dK-kUH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KFD-36-gi0" secondAttribute="trailing" constant="16" id="MWL-aA-FBO"/>
+                <constraint firstItem="B9x-z9-MUn" firstAttribute="top" secondItem="Rz4-oI-3PX" secondAttribute="bottom" constant="22" id="Mpq-Mg-hfi"/>
+                <constraint firstItem="B9x-z9-MUn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="N3v-cW-6lf"/>
+                <constraint firstAttribute="bottom" secondItem="yuu-k1-IzN" secondAttribute="bottom" id="To8-vw-wfk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yuu-k1-IzN" secondAttribute="trailing" id="W5O-8c-pWM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rz4-oI-3PX" secondAttribute="trailing" id="Wxy-2B-PLI"/>
+                <constraint firstItem="Rhq-K7-Xbf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="crH-QV-4Ix"/>
+                <constraint firstItem="yuu-k1-IzN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eAS-g8-Dlo"/>
+                <constraint firstItem="yuu-k1-IzN" firstAttribute="top" secondItem="KFD-36-gi0" secondAttribute="bottom" constant="6" id="g2B-EA-1cv"/>
+                <constraint firstItem="Rz4-oI-3PX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ser-zb-6WT"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

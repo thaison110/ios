@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HeaderView" id="iN0-l3-epB" customClass="HeaderView" customModule="MamNon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_nameSchool" translatesAutoresizingMaskIntoConstraints="NO" id="qx6-KP-3mL">
+                    <rect key="frame" x="16" y="86" width="52" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="Kbc-h5-QQx"/>
+                        <constraint firstAttribute="width" constant="52" id="p4m-0W-HIL"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trường mầm non Hoạ Mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfr-Hc-EwV">
+                    <rect key="frame" x="110" y="91.5" width="194.5" height="21.5"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="18"/>
+                    <color key="textColor" systemColor="systemBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_HeaderCall" translatesAutoresizingMaskIntoConstraints="NO" id="iQ2-0w-kDy">
+                    <rect key="frame" x="375" y="91" width="23" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="23" id="Pd3-4X-iJ9"/>
+                        <constraint firstAttribute="height" constant="23" id="vl5-wV-6B4"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="0.47450980392156861" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Qfr-Hc-EwV" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="0SY-TB-CAx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qx6-KP-3mL" secondAttribute="bottom" constant="7" id="2eL-hW-fpT"/>
+                <constraint firstItem="qx6-KP-3mL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="HjL-e2-jMT"/>
+                <constraint firstItem="iQ2-0w-kDy" firstAttribute="centerY" secondItem="Qfr-Hc-EwV" secondAttribute="centerY" id="SiY-pN-p6P"/>
+                <constraint firstAttribute="trailing" secondItem="iQ2-0w-kDy" secondAttribute="trailing" constant="16" id="bAV-9a-fe4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Qfr-Hc-EwV" secondAttribute="bottom" constant="12" id="yBG-Gg-psV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="329.79910714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_HeaderCall" width="28" height="28"/>
+        <image name="ic_nameSchool" width="61" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

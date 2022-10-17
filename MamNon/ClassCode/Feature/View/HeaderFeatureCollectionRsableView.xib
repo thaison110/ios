@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HeaderFeatureCollectionRsableView" id="iN0-l3-epB" customClass="HeaderFeatureCollectionRsableView" customModule="MamNon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="278"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiện ích đã ghim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsL-YT-zHR">
+                    <rect key="frame" x="16" y="12" width="129" height="21.5"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Những tiện ích này sẽ xuất hiện ở màn hình chính giúp bạn truy cập nhanh hơn" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NN2-Ah-nw7">
+                    <rect key="frame" x="16" y="36.5" width="382" height="31.5"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                    <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifE-Y0-heZ">
+                    <rect key="frame" x="363" y="8" width="35" height="30"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Xong">
+                        <color key="titleColor" red="0.0" green="0.36078431372549019" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="pressedAcction:" destination="iN0-l3-epB" eventType="touchUpInside" id="LEG-Hg-NFZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="NN2-Ah-nw7" firstAttribute="top" secondItem="HsL-YT-zHR" secondAttribute="bottom" constant="3" id="1sj-Hc-oqU"/>
+                <constraint firstItem="HsL-YT-zHR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Yet-dY-aS4"/>
+                <constraint firstAttribute="trailing" secondItem="ifE-Y0-heZ" secondAttribute="trailing" constant="16" id="bFv-iS-c8r"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NN2-Ah-nw7" secondAttribute="trailing" constant="16" id="fR4-Bv-23B"/>
+                <constraint firstItem="ifE-Y0-heZ" firstAttribute="centerY" secondItem="HsL-YT-zHR" secondAttribute="centerY" id="mDk-3o-ky4"/>
+                <constraint firstItem="HsL-YT-zHR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="nGp-MN-qNd"/>
+                <constraint firstItem="NN2-Ah-nw7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="try-Hi-ruy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="buttonAcction" destination="ifE-Y0-heZ" id="jJU-qr-ZkS"/>
+                <outlet property="labelSubTitle" destination="NN2-Ah-nw7" id="geG-tv-yV4"/>
+                <outlet property="labelTitle" destination="HsL-YT-zHR" id="mRB-IT-glT"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="293.30357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="126" id="KGk-i7-Jjw" customClass="IndexInforTableViewCell" customModule="MamNon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="126"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrO-YP-AwD">
+                        <rect key="frame" x="0.0" y="0.0" width="413" height="84"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="84" id="tgV-cH-AUZ"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_AvatarDefaul" translatesAutoresizingMaskIntoConstraints="NO" id="3x9-3L-oek">
+                        <rect key="frame" x="34" y="12" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="7Jm-8U-l40"/>
+                            <constraint firstAttribute="width" constant="60" id="lz0-ea-sO0"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đặng Nhật Minh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8B-nu-Gbh">
+                        <rect key="frame" x="106" y="12" width="277" height="29"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày sinh: 17/08/2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgf-jy-bfl">
+                        <rect key="frame" x="106" y="45" width="277" height="18"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="yrO-YP-AwD" secondAttribute="trailing" id="DUa-Wo-JYw"/>
+                    <constraint firstAttribute="trailing" secondItem="Qgf-jy-bfl" secondAttribute="trailing" constant="30" id="HTN-Cn-0Ai"/>
+                    <constraint firstItem="yrO-YP-AwD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JJa-Ea-Vhk"/>
+                    <constraint firstItem="3x9-3L-oek" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="JXN-11-j1I"/>
+                    <constraint firstItem="h8B-nu-Gbh" firstAttribute="leading" secondItem="3x9-3L-oek" secondAttribute="trailing" constant="12" id="JzN-aT-Z5j"/>
+                    <constraint firstAttribute="trailing" secondItem="h8B-nu-Gbh" secondAttribute="trailing" constant="30" id="PEG-yL-OSI"/>
+                    <constraint firstItem="Qgf-jy-bfl" firstAttribute="top" secondItem="h8B-nu-Gbh" secondAttribute="bottom" constant="4" id="PxA-rq-6hJ"/>
+                    <constraint firstAttribute="bottom" secondItem="yrO-YP-AwD" secondAttribute="bottom" id="QaZ-MV-19q"/>
+                    <constraint firstItem="Qgf-jy-bfl" firstAttribute="leading" secondItem="3x9-3L-oek" secondAttribute="trailing" constant="12" id="fX8-vh-tLC"/>
+                    <constraint firstItem="3x9-3L-oek" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="34" id="iMS-Ic-QQH"/>
+                    <constraint firstItem="yrO-YP-AwD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mLn-cv-BBQ"/>
+                    <constraint firstItem="h8B-nu-Gbh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="u3M-xc-AOA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageAvatar" destination="3x9-3L-oek" id="nAf-AM-ChI"/>
+                <outlet property="labelBirthday" destination="Qgf-jy-bfl" id="5j2-sz-QEE"/>
+                <outlet property="labelName" destination="h8B-nu-Gbh" id="O1W-F0-KhW"/>
+            </connections>
+            <point key="canvasLocation" x="199.27536231884059" y="113.83928571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_AvatarDefaul" width="120" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

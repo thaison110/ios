@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="PickUpHistoryItemTableViewCell" customModule="MamNon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDl-M2-3eI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uC1-8e-c3S" userLabel="ViewLine">
+                                <rect key="frame" x="0.0" y="62" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Yun-6p-hO3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="63" id="4E4-XD-NK9"/>
+                            <constraint firstAttribute="bottom" secondItem="uC1-8e-c3S" secondAttribute="bottom" id="EFB-gN-l6W"/>
+                            <constraint firstItem="uC1-8e-c3S" firstAttribute="leading" secondItem="JDl-M2-3eI" secondAttribute="leading" id="aby-Se-0ks"/>
+                            <constraint firstAttribute="trailing" secondItem="uC1-8e-c3S" secondAttribute="trailing" id="rBD-oZ-3pF"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16/08/2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5N-Lm-CIq">
+                        <rect key="frame" x="20" y="12" width="262" height="18"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mẹ  Đón sớm   Đã tạo lúc 16:12, 15/08/2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cME-Wy-qnv">
+                        <rect key="frame" x="20" y="33" width="262" height="16"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                        <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_ArrowRightGay" translatesAutoresizingMaskIntoConstraints="NO" id="9yj-zV-x3y">
+                        <rect key="frame" x="295" y="26.5" width="5" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="Nrx-t2-hbz"/>
+                            <constraint firstAttribute="width" constant="5" id="Ucc-kv-UXR"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JDl-M2-3eI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3Na-VQ-Niz"/>
+                    <constraint firstAttribute="trailing" secondItem="9yj-zV-x3y" secondAttribute="trailing" constant="20" id="4d5-fo-c4i"/>
+                    <constraint firstAttribute="trailing" secondItem="JDl-M2-3eI" secondAttribute="trailing" id="5wL-Lj-WrO"/>
+                    <constraint firstAttribute="bottom" secondItem="JDl-M2-3eI" secondAttribute="bottom" id="A5N-Hs-UcG"/>
+                    <constraint firstItem="JDl-M2-3eI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JRH-5l-gyC"/>
+                    <constraint firstAttribute="trailing" secondItem="D5N-Lm-CIq" secondAttribute="trailing" constant="38" id="OTX-CX-Oe3"/>
+                    <constraint firstItem="9yj-zV-x3y" firstAttribute="centerY" secondItem="JDl-M2-3eI" secondAttribute="centerY" id="dPD-2M-vXT"/>
+                    <constraint firstAttribute="trailing" secondItem="cME-Wy-qnv" secondAttribute="trailing" constant="38" id="hQ6-v8-VD3"/>
+                    <constraint firstItem="cME-Wy-qnv" firstAttribute="top" secondItem="D5N-Lm-CIq" secondAttribute="bottom" constant="3" id="m3k-zq-Ani"/>
+                    <constraint firstItem="D5N-Lm-CIq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="rJb-bb-N4N"/>
+                    <constraint firstItem="D5N-Lm-CIq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="v9n-5N-7xc"/>
+                    <constraint firstItem="cME-Wy-qnv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="yhC-vn-ttE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelSubtitle" destination="cME-Wy-qnv" id="Rcb-kP-N4Q"/>
+                <outlet property="labelTime" destination="D5N-Lm-CIq" id="w2I-0e-o8H"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="105.13392857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_ArrowRightGay" width="7" height="13"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

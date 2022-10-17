@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ChoiceTimePickUpView" id="iN0-l3-epB" customClass="ChoiceTimePickUpView" customModule="MamNon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="293"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68K-oX-gma">
+                    <rect key="frame" x="16" y="60" width="382" height="217"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="m6S-Hi-fNV">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="217"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="m6S-Hi-fNV" firstAttribute="top" secondItem="68K-oX-gma" secondAttribute="top" id="Ape-2y-TxM"/>
+                        <constraint firstAttribute="trailing" secondItem="m6S-Hi-fNV" secondAttribute="trailing" id="J5E-qj-l9G"/>
+                        <constraint firstItem="m6S-Hi-fNV" firstAttribute="leading" secondItem="68K-oX-gma" secondAttribute="leading" id="MW0-sT-RPV"/>
+                        <constraint firstAttribute="bottom" secondItem="m6S-Hi-fNV" secondAttribute="bottom" id="mAC-2b-CAH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="68K-oX-gma" secondAttribute="trailing" constant="16" id="cux-z3-lHE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="68K-oX-gma" secondAttribute="bottom" constant="16" id="ghv-4V-K8j"/>
+                <constraint firstItem="68K-oX-gma" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="hwD-An-i4G"/>
+                <constraint firstItem="68K-oX-gma" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="nnX-bM-UyN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tabelView" destination="m6S-Hi-fNV" id="zZ3-jw-mRt"/>
+                <outlet property="viewContent" destination="68K-oX-gma" id="5Ug-tl-ARZ"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="263.50446428571428"/>
+        </view>
+    </objects>
+</document>

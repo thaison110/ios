@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="ShuttlePersonItemTableViewCell" customModule="MamNon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HhK-Bm-wbF">
+                        <rect key="frame" x="16" y="6" width="325" height="68"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_AvatarDefaul" translatesAutoresizingMaskIntoConstraints="NO" id="X9g-01-M2k">
+                                <rect key="frame" x="12" y="12" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="NoE-bu-9VQ"/>
+                                    <constraint firstAttribute="width" secondItem="X9g-01-M2k" secondAttribute="height" id="gAX-fU-hPY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trương Ngọc Diệp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psb-lm-bYr">
+                                <rect key="frame" x="70" y="13" width="222" height="21.5"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_ArrowRightGay" translatesAutoresizingMaskIntoConstraints="NO" id="8c6-ee-j04">
+                                <rect key="frame" x="303" y="23.5" width="10" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="9HT-ib-NeY"/>
+                                    <constraint firstAttribute="width" secondItem="8c6-ee-j04" secondAttribute="height" multiplier="5:10.5" id="El9-iT-K8I"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bố" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAw-aa-mKa">
+                                <rect key="frame" x="70" y="36.5" width="222" height="18"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                                <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X9g-01-M2k" firstAttribute="leading" secondItem="HhK-Bm-wbF" secondAttribute="leading" constant="12" id="1vH-Bb-AMU"/>
+                            <constraint firstItem="Psb-lm-bYr" firstAttribute="leading" secondItem="X9g-01-M2k" secondAttribute="trailing" constant="14" id="57V-UU-isb"/>
+                            <constraint firstItem="RAw-aa-mKa" firstAttribute="leading" secondItem="X9g-01-M2k" secondAttribute="trailing" constant="14" id="Kva-SD-BOU"/>
+                            <constraint firstItem="RAw-aa-mKa" firstAttribute="top" secondItem="Psb-lm-bYr" secondAttribute="bottom" constant="2" id="VWf-H2-Kcg"/>
+                            <constraint firstItem="Psb-lm-bYr" firstAttribute="top" secondItem="HhK-Bm-wbF" secondAttribute="top" constant="13" id="ZQs-Rb-M0h"/>
+                            <constraint firstAttribute="trailing" secondItem="RAw-aa-mKa" secondAttribute="trailing" constant="33" id="gJe-l3-h3P"/>
+                            <constraint firstAttribute="height" constant="68" id="hjk-Q3-jes"/>
+                            <constraint firstAttribute="trailing" secondItem="Psb-lm-bYr" secondAttribute="trailing" constant="33" id="iXW-bj-gXa"/>
+                            <constraint firstItem="X9g-01-M2k" firstAttribute="top" secondItem="HhK-Bm-wbF" secondAttribute="top" constant="12" id="r5y-nk-UEM"/>
+                            <constraint firstItem="8c6-ee-j04" firstAttribute="centerY" secondItem="HhK-Bm-wbF" secondAttribute="centerY" id="rQp-aO-07N"/>
+                            <constraint firstAttribute="trailing" secondItem="8c6-ee-j04" secondAttribute="trailing" constant="12" id="wxe-OM-GMw"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HhK-Bm-wbF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Euv-r0-Sv1"/>
+                    <constraint firstAttribute="bottom" secondItem="HhK-Bm-wbF" secondAttribute="bottom" constant="6" id="Lep-2k-4Zs"/>
+                    <constraint firstAttribute="trailing" secondItem="HhK-Bm-wbF" secondAttribute="trailing" constant="16" id="fIF-eo-dl7"/>
+                    <constraint firstItem="HhK-Bm-wbF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="feX-mJ-EGq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageAvatar" destination="X9g-01-M2k" id="0Dk-nx-16v"/>
+                <outlet property="labelName" destination="Psb-lm-bYr" id="OGY-Ap-QiJ"/>
+                <outlet property="labelRelationship" destination="RAw-aa-mKa" id="SsA-PR-WG0"/>
+            </connections>
+            <point key="canvasLocation" x="158.69565217391306" y="77.34375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_ArrowRightGay" width="7" height="13"/>
+        <image name="ic_AvatarDefaul" width="120" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

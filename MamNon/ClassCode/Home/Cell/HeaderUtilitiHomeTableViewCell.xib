@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="HeaderUtilitiHomeTableViewCell" customModule="MamNon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B17-09-yiA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K27-uM-c6h">
+                                <rect key="frame" x="16" y="11.5" width="43" height="21.5"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYU-PF-7IT">
+                                <rect key="frame" x="280" y="15" width="24" height="14"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="didSelectMore:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hEC-D4-eep"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AYU-PF-7IT" firstAttribute="centerY" secondItem="B17-09-yiA" secondAttribute="centerY" id="023-nX-NjO"/>
+                            <constraint firstAttribute="trailing" secondItem="AYU-PF-7IT" secondAttribute="trailing" constant="16" id="BRD-ag-Eul"/>
+                            <constraint firstItem="K27-uM-c6h" firstAttribute="centerY" secondItem="B17-09-yiA" secondAttribute="centerY" id="EPw-Vi-AIp"/>
+                            <constraint firstItem="K27-uM-c6h" firstAttribute="leading" secondItem="B17-09-yiA" secondAttribute="leading" constant="16" id="chT-ob-hIq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="B17-09-yiA" secondAttribute="bottom" id="II5-2p-Ezo"/>
+                    <constraint firstItem="B17-09-yiA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UbN-3N-Lwg"/>
+                    <constraint firstItem="B17-09-yiA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="d0H-e2-wVB"/>
+                    <constraint firstAttribute="trailing" secondItem="B17-09-yiA" secondAttribute="trailing" id="xcD-CF-gPh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="seeMoreButton" destination="AYU-PF-7IT" id="KTZ-1y-bu7"/>
+                <outlet property="titleLabel" destination="K27-uM-c6h" id="CzL-Bu-lbs"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="119"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
